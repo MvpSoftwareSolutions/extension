@@ -27,18 +27,11 @@ button.addEventListener('click', (e) => {
             if (response.status === 200) {
                 id == response.data.id
                 console.log(response.data.id);
-                alert(window.location)
-                axios.get("http://198.251.68.245:2020/url",
-                    { headers: headersa })
-                    .then(function (response) {
-                        console.log(response.status)
-                    })
-
+                alert("Ingreso exitoso")
             }
         })
         .catch(function (error) {
-            console.log(error);
-            console.log(error.data)
+            alert("Error al ingresar")
         });
 
 
