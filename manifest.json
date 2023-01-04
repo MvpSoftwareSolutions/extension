@@ -1,0 +1,48 @@
+{
+    "name": "Ingreso",
+    "description": "Login",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icons/logo.png",
+            "32": "images/icons/logo.png",
+            "48": "images/icons/logo.png",
+            "128": "images/icons/logo.png"
+        }
+    },
+    "icons": {
+        "16": "images/icons/logo.png",
+        "32": "images/icons/logo.png",
+        "48": "images/icons/logo.png",
+        "128": "images/icons/logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.facebook.com/"
+            ],
+            "js": [
+                "email.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://accounts.google.com/v3/signin/*"
+            ],
+            "js": [
+                "content-scripts.js",
+                "email.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
