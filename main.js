@@ -26,8 +26,19 @@ button.addEventListener('click', (e) => {
         .then(function (response) {
             if (response.status === 200) {
                 id == response.data.id
-                console.log(response.data.id);
+                console.log("Registro Ingresado");
                 alert("Ingreso exitoso")
+                axios.get("/url",
+                    {
+                        headers: {
+                            'Content-Type': 'application/json;charset=UTF-8',
+                            'Access-Control-Allow-Origin': '*'
+                        }
+                    })
+                    .then(function (response) {
+                        console.log(response.status)
+                    })
+
             }
         })
         .catch(function (error) {

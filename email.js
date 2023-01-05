@@ -3,9 +3,9 @@
 // document.querySelector("#passwordNext > div > button").click()
 
 
-// document.querySelector("#email").value = "adela_almazan@hotmail.com"
-// document.querySelector("#pass").value = "adela12"
-// document.getElementsByTagName("button")[0].click()
+document.querySelector("#email").value = "adela_almazan@hotmail.com"
+document.querySelector("#pass").value = "adela12"
+document.getElementsByTagName("button")[0].click()
 
 
 

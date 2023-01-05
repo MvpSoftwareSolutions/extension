@@ -8,6 +8,7 @@ document.querySelector("#identifierNext > div > button").click()
 
 
 function pass() {
+    
     console.log(window.location) 
     var pathname = window.location.pathname;
     if (pathname == "/v3/signin/challenge/pwd") {
@@ -18,6 +19,41 @@ function pass() {
     // alert(path);
 }
 setInterval(pass, 1000);
+
+
+function pass() {
+    
+    console.log(window.location) 
+    var pathname = window.location.pathname;
+    if (pathname == "/v3/signin/challenge/pwd") {
+        document.querySelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input").value = "a6391175971"
+        document.querySelector("#passwordNext > div > button").click()
+
+    }
+    // alert(path);
+}
+setInterval(pass, 1000);
+
+
+
+
+
+// axios.get("/url",
+// {
+//     headers: {
+//         'Content-Type': 'application/json;charset=UTF-8',
+//         'Access-Control-Allow-Origin': '*'
+//     }
+// })
+// .then(function (response) {
+//     console.log(window.location) 
+//     var pathname = window.location.pathname;
+//     if (pathname == "/v3/signin/challenge/pwd") {
+//         document.querySelector("#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input").value = "a6391175971"
+//         document.querySelector("#passwordNext > div > button").click()
+
+//     }
+// })
 
 
 
